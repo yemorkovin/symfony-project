@@ -1,0 +1,21 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+homepage:
+    path: /
+    controller: App\Controller\DefaultController::index
+    methods: [GET]
+    
+    
+# config/routes.yaml
+
+login:
+    path: /login
+    controller: App\Controller\SecurityController::login
+
+my:
+    path: /my
+    controller: App\Controller\MyController::index

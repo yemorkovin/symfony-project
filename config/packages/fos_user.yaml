@@ -1,0 +1,8 @@
+# config/packages/fos_user.yaml
+fos_user:
+    db_driver: orm # может быть также mongodb или couchdb
+    firewall_name: main
+    user_class: App\Entity\User
+    from_email:
+        address: "no-reply@yourdomain.com"
+        sender_name: "Your Name"
